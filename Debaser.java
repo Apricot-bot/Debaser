@@ -25,15 +25,5 @@ public class Debaser {
     public int convertToBaseTen(int fromBase) {
         return this.value;
     }
-    
-    public static void main(String[] args) {
-        Debaser debaser = new Debaser();
-        System.out.println(debaser.convertToBaseN(0));
-
-    }
-
-    public static void main(String[] args) {
-        
-    }
 
 }
