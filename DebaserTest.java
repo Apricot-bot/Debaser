@@ -1,6 +1,8 @@
 public class DebaserTest {
     public static void main(String[] args) {
         Debaser db = new Debaser();
+
+        // convertToBaseTen tests
         System.out.println("\n##########################");
 
         db.setValue(111001);
@@ -19,6 +21,7 @@ public class DebaserTest {
         System.out.println("\n1244 in base5 -> base10 = 199");
         System.out.println("Output: " + db.convertToBaseTen(5));
 
+        // convertToBaseN tests
         System.out.println("\n##########################");
 
         db.setValue(199);

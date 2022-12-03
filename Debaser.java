@@ -3,14 +3,14 @@ public class Debaser {
     
     int value;
 
+    // Interface
+
     public Debaser() {
         this.value = 0;
     }
-    
     public Debaser(int initValue) {
         this.value = initValue;
     }
-
     public void setValue(int value) {
         this.value = value;
     }
@@ -18,6 +18,7 @@ public class Debaser {
         return this.value;
     }
 
+    // convenient utility functions
     private int digitOf(int digit, int number) {
         return ((number % pow10(digit)) - number % pow10(digit - 1))/pow10(digit - 1);
     }
@@ -34,6 +35,7 @@ public class Debaser {
         int[] digits = { 0, 0, 0, 0, 0, 0 };
 
         // Circumventing using a for loop by just doing the same thing over and over
+        // Repeated division by toBase, taking the remainders as each digit, reducing current each time
 
         remainder = current % toBase;
         current = (current - remainder) / toBase;
