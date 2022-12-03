@@ -29,7 +29,49 @@ public class Debaser {
     }
 
     public int convertToBaseN(int toBase) {
-        return 0;
+        int current = this.value;
+        int remainder;
+        int[] digits = { 0, 0, 0, 0, 0, 0 };
+
+        // Circumventing using a for loop by just doing the same thing over and over
+
+        remainder = current % toBase;
+        current = (current - remainder) / toBase;
+        digits[0] = remainder;
+
+        remainder = current % toBase;
+        current = (current - remainder) / toBase;
+        digits[1] = remainder;
+
+        remainder = current % toBase;
+        current = (current - remainder) / toBase;
+        digits[2] = remainder;
+
+        remainder = current % toBase;
+        current = (current - remainder) / toBase;
+        digits[3] = remainder;
+
+        remainder = current % toBase;
+        current = (current - remainder) / toBase;
+        digits[4] = remainder;
+
+        remainder = current % toBase;
+        current = (current - remainder) / toBase;
+        digits[5] = remainder;
+
+        // Converting digits to their correct places
+        // (for representation in a base10 integer)
+
+        int result = 0
+        + digits[0] * pow10(0)
+        + digits[1] * pow10(1)
+        + digits[2] * pow10(2)
+        + digits[3] * pow10(3)
+        + digits[4] * pow10(4)
+        + digits[5] * pow10(5);
+
+        return result;
+     
     }
 
 
@@ -42,6 +84,9 @@ public class Debaser {
             digitOf(5, this.value),
             digitOf(6, this.value),
         };
+
+        // Each digit multiplied by its place value
+        // Calculated with base^digitPlace
         return 
           digits[0] * powI(fromBase, 0)
         + digits[1] * powI(fromBase, 1)
