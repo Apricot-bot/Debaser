@@ -24,10 +24,14 @@ public class Debaser {
     private int pow10(int pow) {
         return (int)Math.pow(10, pow);
     }
+    private int powI(int base, int pow) {
+        return (int)Math.pow(base, pow);
+    }
 
     public int convertToBaseN(int toBase) {
         return 0;
     }
+
 
     public int convertToBaseTen(int fromBase) {
         int[] digits = {
@@ -39,12 +43,12 @@ public class Debaser {
             digitOf(6, this.value),
         };
         return 
-          digits[0] * (int)Math.pow(fromBase, 0)
-        + digits[1] * (int)Math.pow(fromBase, 1)
-        + digits[2] * (int)Math.pow(fromBase, 2)
-        + digits[3] * (int)Math.pow(fromBase, 3)
-        + digits[4] * (int)Math.pow(fromBase, 4)
-        + digits[5] * (int)Math.pow(fromBase, 5);
+          digits[0] * powI(fromBase, 0)
+        + digits[1] * powI(fromBase, 1)
+        + digits[2] * powI(fromBase, 2)
+        + digits[3] * powI(fromBase, 3)
+        + digits[4] * powI(fromBase, 4)
+        + digits[5] * powI(fromBase, 5);
     }
 
 }
