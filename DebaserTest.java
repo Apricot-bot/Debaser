@@ -10,6 +10,10 @@ public class DebaserTest {
         db.setValue(2110);
         System.out.println("\nExpected: 742");
         System.out.println("Actual: " + db.convertToBaseTen(7));
+
+        db.setValue(733);
+        System.out.println("\nExpected: 193");
+        System.out.println("Actual: " + db.convertToBaseTen(5));
         
         System.out.println("\n##################\n");
     }
