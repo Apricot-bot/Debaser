@@ -56,7 +56,9 @@ public class Debaser {
         return (int)Math.pow(base, pow);
     }
     /**
-     * 
+     * Converts value from base 10 to chosen base
+     * @param toBase the chosen base
+     * @return converted value in the new base
      */
     public int convertToBaseN(int toBase) {
         int current = this.value;
@@ -104,7 +106,9 @@ public class Debaser {
      
     }
     /**
-     * 
+     * Converts value from its current base to base 10
+     * @param fromBase the value's current base
+     * @return newly converted value in base 10
      */
     public int convertToBaseTen(int fromBase) {
         int[] digits = {
