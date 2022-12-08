@@ -1,15 +1,4 @@
 
-
-/**
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- */
-
 public class Debaser {
     
     int value;
