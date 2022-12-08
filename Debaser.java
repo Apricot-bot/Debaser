@@ -1,4 +1,48 @@
-
+/**
+ * Debaser Assignment;
+ * <br>
+ * Goal:
+ * <br>
+ * Create a class that can convert numbers to and from different bases.
+ * <br>
+ * <br>
+ * Restrictions:
+ * <br>
+ * - No `if`, `else`, `while`, or `for` statements
+ * <br>
+ * - No built-in methods, such as `Integer.parseInt`
+ * <br>
+ * - No use of strings to store values
+ * <br>
+ * <br>
+ * Assumptions:
+ * <br>
+ * - Only bases 2-10
+ * <br>
+ * - 6 digit long numbers
+ * <br>
+ * - No floats, all integers
+ * <br>
+ * <br>
+ * Member Names and Work Distribution;
+ * <br>
+ * Sebastian:
+ * <br>
+ * - JavaDoc: `getValue()`, `setValue()`, `powi()`, `pow10()`, `digitOf()`, `convertToBaseN()`, `convertToBaseTen()`, `Debaser()`
+ * <br>
+ * - GitHub repository management
+ * <br>
+ * <br>
+ * Andrew:
+ * <br>
+ * - Interaction methods: `getValue()`, `setValue()`
+ * <br>
+ * - Constructors: `Debaser()`
+ * <br>
+ * - Functionality: `convertToBaseN()`, `convertToBaseTen()`
+ * <br>
+ * - Other private methods: `powi()`, `pow10()`, `digitOf()`
+ */
 public class Debaser {
     
     int value;
