@@ -9,7 +9,7 @@ public class Debaser {
         this.value = 0;
     }
     /**
-     * Constructs the Debaser with an given value of 0
+     * Constructs the Debaser with an given value
      * @param initValue the initial value
      */
     public Debaser(int initValue) {
